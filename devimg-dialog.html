@@ -1,0 +1,48 @@
+<div class="template modal hide">
+	<div class="modal-header">
+		<h1 class="dialog-title">DevIMG</h1>
+	</div>
+	<div class="modal-body">
+
+		<p>Set your desired width and height</p>
+        <input id="inputWidth" name="inputWidth" type="text" placeholder="width"/>
+        <span id="x">x</span>
+        <input id="inputHeight" name="inputHeight" type="text" placeholder="height"/>
+
+
+<!--
+		<p>Choose a theme, optionally</p>
+		<p>
+			<select id="themes">
+				<option value="default" selected="true">Comics</option>
+				<option value="">Memes</option>
+				<option value="">Food</option>
+			</select>
+		</p>
+-->
+        
+        <br><br>
+        <input type="radio" name="group1" value="imagetag" id="imagetag" checked
+               onchange="$('#url-info').hide(); $('#imagetag-info').show();"> Generate as img tag<br>
+        <input type="radio" name="group1" value="urlonly" id="urlonly"
+               onchange="$('#url-info').show(); $('#imagetag-info').hide();"> Generate the url only<br>
+        
+        
+        <p class="info" id="imagetag-info">
+            Code is generated as followed: <i>&#60;img src="http://devimg.com/300x300" width="300" height="300"&#62;</i>
+            <br><br>  
+            The witdh and height attribute are added because this speeds up the rendering of the webpage! For more information, read <a href="http://webdesign.about.com/od/beginningtutorials/a/image_tag_img.htm">this.</a>
+        </p>
+        
+        <p class="info" id="url-info" style="display:none;">
+            Code is generated as followed: <i>http://devimg.com/300x300</i>
+        </p>
+        
+	</div>
+	<div class="modal-footer">
+		<a id="diaglogCancelBtn" class="dialog-button btn" data-button-id="cancel" href="#">Cancel</a>
+		<a id="dialogSubmitBtn" href="#" class="dialog-button btn primary" data-button-id="ok">Insert</a>
+	</div>
+    
+</div>
+

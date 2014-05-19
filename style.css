@@ -1,0 +1,17 @@
+span#x {
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+p.info {
+    margin-top: 10px;
+/*    font-size: 12px;*/
+}
+
+#devimg-icon{
+    background-image: url(./img/icon.svg);
+}
+
+#devimg-icon.active {
+    background-position: 0 -48px !important;
+}}            

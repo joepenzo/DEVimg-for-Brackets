@@ -1,0 +1,12 @@
+{
+    "name": "joepenzo_devimg_for_brackets",
+    "title": "DEVimg for Brackets",
+    "description": "Placeholder images made easy. Adds an entire img html element with a placeholder or just a placeholder image url without the img tag.",
+    "homepage": "https://github.com/joepenzo/devimg_for_brackets",
+    "version": "1.0.0",
+    "author": "Joep Suijkerbuijk <joepenzo@gmail.com> (http://joepsuijkerbuijk.com)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.39.0"
+    }
+}
